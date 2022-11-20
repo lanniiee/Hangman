@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75cce592-122a-47f8-a927-1b78cee28c4c" name="Changes" comment="Generating guess depending on the word size">
+    <list default="true" id="75cce592-122a-47f8-a927-1b78cee28c4c" name="Changes" comment="added updatecharacter method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/hangman/HangmanGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/hangman/HangmanGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/hangman/Interaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/hangman/Interaction.java" afterDir="false" />

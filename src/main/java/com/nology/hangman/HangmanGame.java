@@ -10,12 +10,14 @@ public class HangmanGame {
 
         intro();
 
+        Interaction command = new Interaction();
         WordDisplay word = new WordDisplay();
         word.displayWord();
         word.displayGuess();
 
-        Interaction command = new Interaction();
-        command.runGame();
+        while (true) {
+            word.runGame(command.readCharInput());
+        }
     }
 
 }
