@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75cce592-122a-47f8-a927-1b78cee28c4c" name="Changes" comment="added updatecharacter method">
+    <list default="true" id="75cce592-122a-47f8-a927-1b78cee28c4c" name="Changes" comment="added lives logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/hangman/HangmanGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/hangman/HangmanGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/hangman/Interaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/hangman/Interaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/hangman/WordDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/hangman/WordDisplay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668697920698</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added lives logic">
+      <created>1668971820357</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668971820357</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +98,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Generating a random word" />
-    <option name="LAST_COMMIT_MESSAGE" value="Generating a random word" />
+    <MESSAGE value="added lives logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lives logic" />
   </component>
 </project>

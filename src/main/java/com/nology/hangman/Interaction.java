@@ -8,7 +8,6 @@ public class Interaction {
 
     private Scanner scanner = new Scanner(System.in);
 
-
     protected char readCharInput() {
         printMessage("Enter your character:");
 

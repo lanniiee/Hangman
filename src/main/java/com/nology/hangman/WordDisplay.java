@@ -32,13 +32,16 @@ public class WordDisplay {
 
     public void handleLives(char input) {
         this.input = input;
-        if(!wordAsArray.contains(input)) {
+
+        if (charactersUserGuessed.contains(input)) {
+            System.out.println("You have already guessed this character! Try again");
+        }
+        else if(!wordAsArray.contains(input) && !charactersUserGuessed.contains(input)) {
             this.lives--;
             System.out.println("Unfortunately that is incorrect! You have lost one life. Try again.");
         } else if (wordAsArray.contains(input) && !charactersUserGuessed.contains(input)) {
             System.out.println("Well done! That character is in the word");
-        } else if (charactersUserGuessed.contains(input)) {
-            System.out.println("You have already guessed this letter. Try again");
+            charactersUserGuessed.add(input);
         }
 
         showLives();
@@ -46,23 +49,36 @@ public class WordDisplay {
 
     public void updateChar(char input) {
         this.input = input;
-        charactersUserGuessed.add(input);
-        for (int i = 0; i < word.length(); i++) {
-            if (input == word.charAt(i)) {
-                guess.set(i, input);
+        if (!charactersUserGuessed.contains(input)) {
+            for (int i = 0; i < word.length(); i++) {
+                if (input == word.charAt(i)) {
+                    guess.set(i, input);
+                }
             }
         }
+
         System.out.println(guess);
     }
 
-    public void runGame(char input) {
-            showLives();
-            updateChar(input);
-            handleLives(input);
-
-        if (lives == 0) {
+    public void endGame () {
+        if (this.lives == 0) {
             System.out.println("Game Over!");
+        } else if (guess.equals(wordAsArray)) {
+            System.out.println("Congrats! You guessed the word correctly!");
+
         }
     }
 
+    public void runGame(char input) {
+        if (this.lives > 0) {
+            showLives();
+            updateChar(input);
+            handleLives(input);
+            endGame();
+        }
+        if (lives == 0) {
+            endGame();
+
+        }
+    }
 }
