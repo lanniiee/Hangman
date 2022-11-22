@@ -5,11 +5,12 @@ import java.util.ArrayList;
 public class WordDisplay {
 
     private final ArrayList<Character> guess = new ArrayList<>();
-    private ArrayList<Character> wordAsArray = new ArrayList<>();
-    private ArrayList<Character> charactersUserGuessed = new ArrayList<>();
+    private final ArrayList<Character> wordAsArray = new ArrayList<>();
+    private final ArrayList<Character> charactersUserGuessed = new ArrayList<>();
     private String word;
     private char input;
     private int lives = 5;
+    private boolean gameStart = true;
 
     WordSelector wordSelected = new WordSelector();
 
@@ -33,7 +34,7 @@ public class WordDisplay {
     public void handleLives(char input) {
         this.input = input;
 
-        if (charactersUserGuessed.contains(input)) {
+        if (charactersUserGuessed.contains(input) && !guess.equals(wordAsArray)) {
             System.out.println("You have already guessed this character! Try again");
         }
         else if(!wordAsArray.contains(input) && !charactersUserGuessed.contains(input)) {
@@ -63,21 +64,29 @@ public class WordDisplay {
     public void endGame () {
         if (this.lives == 0) {
             System.out.println("Game Over!");
-        } else if (guess.equals(wordAsArray)) {
-            System.out.println("Congrats! You guessed the word correctly!");
+            this.gameStart = false;
+        }
+        if (guess.equals(wordAsArray)) {
+            this.gameStart = false;
         }
     }
 
     public void runGame(char input) {
-        if (this.lives > 0 || guess.equals(wordAsArray)) {
             showLives();
             updateChar(input);
             handleLives(input);
             endGame();
-        }
     }
 
     public int getLives() {
         return this.lives;
+    }
+
+    public void setLives(int lives) {
+        this.lives = lives;
+    }
+
+    public boolean isGameStart() {
+        return this.gameStart;
     }
 }

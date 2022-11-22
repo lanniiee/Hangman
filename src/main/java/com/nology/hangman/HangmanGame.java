@@ -16,8 +16,12 @@ public class HangmanGame {
         word.displayGuess();
 
         while (word.getLives() > 0) {
-            word.runGame(command.readCharInput(word.getLives()));
+            if (word.isGameStart()) {
+                word.runGame(command.readCharInput());
+            } else {
+                word.setLives(0);
+                System.out.println("Congrats! You got it correct!");
+            }
         }
     }
-
 }

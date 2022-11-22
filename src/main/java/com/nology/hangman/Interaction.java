@@ -6,9 +6,7 @@ public class Interaction {
 
     private char input;
 
-    protected char readCharInput(int lives) {
-
-        while (lives > 0) {
+    protected char readCharInput() {
             printMessage("Enter your character:");
             Scanner scanner = new Scanner(System.in);
             String userInput = scanner.next();
@@ -20,7 +18,6 @@ public class Interaction {
                 input = userInputClean;
                 return input;
             }
-        }
         return input;
     }
 

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75cce592-122a-47f8-a927-1b78cee28c4c" name="Changes" comment="fix type for input" />
+    <list default="true" id="75cce592-122a-47f8-a927-1b78cee28c4c" name="Changes" comment="fix type for input">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/hangman/HangmanGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/hangman/HangmanGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/hangman/Interaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/hangman/Interaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/hangman/WordDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/hangman/WordDisplay.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669126816617</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix type for input">
+      <created>1669131583108</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669131583108</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
