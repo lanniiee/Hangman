@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Interaction {
 
-    private int input;
+    private char input;
 
     protected char readCharInput(int lives) {
 
@@ -17,11 +17,11 @@ public class Interaction {
             if (userInput.length() > 1 ) {
                 printMessage("Oops! Please enter only 1 character at a time.");
             } else {
-                char input = userInputClean;
+                input = userInputClean;
                 return input;
             }
         }
-        return (char) input;
+        return input;
     }
 
     protected void printMessage(String message) {
