@@ -38,7 +38,7 @@ public class WordDisplay {
         }
         else if(!wordAsArray.contains(input) && !charactersUserGuessed.contains(input)) {
             this.lives--;
-            System.out.println("Unfortunately that is incorrect! You have lost one life. Try again.");
+            System.out.println("Unfortunately that is incorrect!");
         } else if (wordAsArray.contains(input) && !charactersUserGuessed.contains(input)) {
             System.out.println("Well done! That character is in the word");
             charactersUserGuessed.add(input);
@@ -65,20 +65,19 @@ public class WordDisplay {
             System.out.println("Game Over!");
         } else if (guess.equals(wordAsArray)) {
             System.out.println("Congrats! You guessed the word correctly!");
-
         }
     }
 
     public void runGame(char input) {
-        if (this.lives > 0) {
+        if (this.lives > 0 || guess.equals(wordAsArray)) {
             showLives();
             updateChar(input);
             handleLives(input);
             endGame();
         }
-        if (lives == 0) {
-            endGame();
+    }
 
-        }
+    public int getLives() {
+        return this.lives;
     }
 }
