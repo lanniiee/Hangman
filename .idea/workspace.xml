@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75cce592-122a-47f8-a927-1b78cee28c4c" name="Changes" comment="fix type for input">
+    <list default="true" id="75cce592-122a-47f8-a927-1b78cee28c4c" name="Changes" comment="fix while loop to end after user get it correct">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/hangman/HangmanGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/hangman/HangmanGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/hangman/Interaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/hangman/Interaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/hangman/WordDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/hangman/WordDisplay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669131583108</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix while loop to end after user get it correct">
+      <created>1669139078354</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669139078354</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +138,7 @@
     <MESSAGE value="added logic to check is all letters are filled in" />
     <MESSAGE value="logic for end game when all lives are lost" />
     <MESSAGE value="fix type for input" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix type for input" />
+    <MESSAGE value="fix while loop to end after user get it correct" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix while loop to end after user get it correct" />
   </component>
 </project>

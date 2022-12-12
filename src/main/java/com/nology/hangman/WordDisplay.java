@@ -16,7 +16,6 @@ public class WordDisplay {
 
     public void displayWord() {
         this.word = wordSelected.generateWord();
-        System.out.println(word);
     }
 
     public void displayGuess() {
